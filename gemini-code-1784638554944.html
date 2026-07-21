@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | VA Lead Generation & CRO Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: #111827;
+            --border-color: #1f2937;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --accent: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.65rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .hero {
+            max-width: 900px;
+            margin: 6rem auto 4rem auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        .badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface-color);
+            border-color: var(--text-muted);
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .metric-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .metric-card h3 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .services {
+            max-width: 1100px;
+            margin: 6rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .service-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 6rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.25rem; }
+            .metrics { grid-template-columns: 1fr; }
+            nav a { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Alex<span>.LeadGen</span></a>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="contact.html" class="btn" style="padding: 0.5rem 1rem; margin-left: 1rem;">Book a Call</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="badge">Specialized Virtual Assistant & Funnel Architect</div>
+        <h1>Stop Chasing Cold Leads. Build Predictable Outbound Pipelines.</h1>
+        <p>Most Virtual Assistants just handle routine admin tasks. I specialize in B2B lead generation, verified list-building, and high-converting pipeline workflows that turn cold clicks into booked discovery calls.</p>
+        <div class="hero-buttons">
+            <a href="contact.html" class="btn">Book a Discovery Call</a>
+            <a href="case-studies.html" class="btn btn-secondary">View Case Studies</a>
+        </div>
+    </section>
+
+    <section class="metrics">
+        <div class="metric-card">
+            <h3>2,500+</h3>
+            <p>Verified B2B Leads Built Monthly</p>
+        </div>
+        <div class="metric-card">
+            <h3>24%</h3>
+            <p>Average Outbound Response Lift</p>
+        </div>
+        <div class="metric-card">
+            <h3>3x</h3>
+            <p>CRM Pipeline Efficiency Boost</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Core Lead Generation Skills</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>🎯 Targeted List Building</h4>
+                <p>Scraping and verifying high-accuracy decision-maker emails and LinkedIn profiles using Apollo, LinkedIn Sales Navigator, and ZeroBounce.</p>
+            </div>
+            <div class="service-card">
+                <h4>✉️ Outbound Sequence Setup</h4>
+                <p>Writing personalized cold email and LinkedIn message frameworks focused on friction reduction and high response rates.</p>
+            </div>
+            <div class="service-card">
+                <h4>⚡ CRM Architecture & Cleanup</h4>
+                <p>Organizing pipelines, managing deal tracking tags, and eliminating duplicate records inside HubSpot, Salesforce, or close.io.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Alex Morgan. Built for high-converting B2B lead generation.</p>
+    </footer>
+
+</body>
+</html>

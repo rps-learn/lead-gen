@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | Alex Morgan - VA Lead Generation & CRO Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: #111827;
+            --border-color: #1f2937;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --accent: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-main);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.65rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .page-header {
+            max-width: 800px;
+            margin: 4rem auto 3rem auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+        }
+
+        .case-study-container {
+            max-width: 1000px;
+            margin: 0 auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .case-study-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: 2fr 1.2fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .cs-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .cs-tag {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .cs-section-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-top: 1.25rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .cs-content p, .cs-content li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cs-content ul {
+            padding-left: 1.25rem;
+        }
+
+        .cs-metrics-box {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .cs-metrics-box h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .cta-banner {
+            max-width: 1000px;
+            margin: 6rem auto 3rem auto;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.05));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-banner h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-card {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Alex<span>.LeadGen</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="case-studies.html" class="active">Case Studies</a>
+            <a href="contact.html" class="btn" style="padding: 0.5rem 1rem; margin-left: 1rem;">Book a Call</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Proven Outbound Pipeline Results</h1>
+        <p>A breakdown of how structured list verification, personalized sequencing, and CRM organization scale B2B pipelines.</p>
+    </section>
+
+    <div class="case-study-container">
+        
+        <div class="case-study-card">
+            <div class="cs-content">
+                <span class="cs-tag">B2B SaaS Lead Gen Funnel</span>
+                <h2>Scaling Outbound Meetings for a B2B SaaS Startup</h2>
+                
+                <p class="cs-section-title">The Challenge</p>
+                <p>The client was struggling with low response rates (<2%) on cold outreach. Their existing internal CRM data was filled with unverified emails causing high bounce rates, and messages lacked targeted personalization.</p>
+                
+                <p class="cs-section-title">The Strategy & Execution</p>
+                <ul>
+                    <li>Scraped and strictly verified 2,500 decision-maker profiles using Apollo & ZeroBounce.</li>
+                    <li>Built customized, pain-point-driven multi-channel email & LinkedIn sequences.</li>
+                    <li>Cleaned and organized pipeline tracking structures in HubSpot to flag warm engagement real-time.</li>
+                </ul>
+
+                <p class="cs-section-title">The Workflow Tech Stack</p>
+                <p>Apollo.io, LinkedIn Sales Navigator, ZeroBounce, HubSpot CRM.</p>
+            </div>
+            
+            <div class="cs-metrics-box">
+                <h4>Verified Results</h4>
+                <div class="stat-item">
+                    <div class="stat-num">+24%</div>
+                    <div class="stat-label">Response Rate Increase</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">18</div>
+                    <div class="stat-label">Qualified Discovery Calls Booked (Month 1)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">0%</div>
+                    <div class="stat-label">Hard Bounce Rate (Fully Cleaned Data)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study-card">
+            <div class="cs-content">
+                <span class="cs-tag">CRM & Pipeline Optimization</span>
+                <h2>Overhauling Messy Data & Streamlining Follow-Up Workflows</h2>
+                
+                <p class="cs-section-title">The Challenge</p>
+                <p>An agency services provider had over 5,000 legacy contacts sitting unsegmented in their database with missed follow-up flags and dropped prospect conversations.</p>
+                
+                <p class="cs-section-title">The Strategy & Execution</p>
+                <ul>
+                    <li>Executed a complete database audit and deduplication pass.</li>
+                    <li>Established custom pipeline stages, lead-scoring tags, and automated task reminders for follow-ups.</li>
+                    <li>Implemented clear naming conventions to map out target account tiers.</li>
+                </ul>
+
+                <p class="cs-section-title">The Workflow Tech Stack</p>
+                <p>Salesforce / Close.io, Notion, Zapier automations.</p>
+            </div>
+            
+            <div class="cs-metrics-box">
+                <h4>Verified Results</h4>
+                <div class="stat-item">
+                    <div class="stat-num">3x</div>
+                    <div class="stat-label">Pipeline Efficiency Boost</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Reduction in Lost Follow-Ups</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">5hrs</div>
+                    <div class="stat-label">Saved Weekly for Sales Reps</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta-banner">
+        <h3>Want results like this for your pipeline?</h3>
+        <p>Let's review your current outbound bottlenecks and map out a clean lead generation framework together.</p>
+        <a href="contact.html" class="btn">Book Your Discovery Call</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alex Morgan. Built for high-converting B2B lead generation.</p>
+    </footer>
+
+</body>
+</html>
