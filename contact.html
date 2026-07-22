@@ -221,7 +221,14 @@
         </div>
 
         <div class="form-card">
-            <form name="lead-gen-contact" method="POST" data-netlify="true">
+            <form name="lead-gen-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    
+                <input type="hidden" name="form-name" value="lead-gen-contact">
+                
+                <p style="display: none;">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
