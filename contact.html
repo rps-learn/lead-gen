@@ -62,14 +62,14 @@
             transition: color 0.2s;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover {
             color: var(--text-main);
         }
 
         .btn {
             background-color: var(--primary);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.65rem 1.25rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
@@ -78,12 +78,17 @@
             display: inline-block;
             border: none;
             cursor: pointer;
-            width: 100%;
-            text-align: center;
         }
 
         .btn:hover {
             background-color: var(--primary-hover);
+        }
+
+        /* New class specifically for the form submit button so it doesn't break the menu */
+        .btn-submit {
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem 1.5rem;
         }
 
         .contact-wrapper {
@@ -184,6 +189,7 @@
                 margin: 3rem auto;
             }
             .contact-info h1 { font-size: 2rem; }
+            nav a { display: none; }
         }
     </style>
 </head>
@@ -195,7 +201,7 @@
             <a href="index.html">Home</a>
             <a href="index.html#services">Services</a>
             <a href="case-studies.html">Case Studies</a>
-            <a href="contact.html" class="btn active" style="padding: 0.5rem 1rem; margin-left: 1rem;">Book a Call</a>
+            <a href="contact.html" class="btn" style="padding: 0.5rem 1rem; margin-left: 1rem;">Book a Call</a>
         </nav>
     </header>
 
@@ -248,7 +254,8 @@
                     <textarea id="message" name="message" class="form-control" placeholder="Tell me a bit about your current process..."></textarea>
                 </div>
 
-                <button type="submit" class="btn">Submit Strategy Request</button>
+                <!-- Added the btn-submit class here -->
+                <button type="submit" class="btn btn-submit">Submit Strategy Request</button>
             </form>
         </div>
     </div>
