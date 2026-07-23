@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogelio Servidor | VA Lead Generation & CRO Expert</title>
+    <title>Servidor Dev | Full-Stack Developer & Outbound Automation Architect</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Inline SVG Favicon (Monogram) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E .mono-text { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 80px; letter-spacing: -8px; } .mono-s { fill: %23ffffff; } .mono-d { fill: %23818cf8; } .mono-dot { fill: %23818cf8; } %3E%3C/style%3E%3Crect width='120' height='120' rx='24' fill='%230f172a'/%3E%3Ctext x='14' y='92' class='mono-text'%3E%3Ctspan class='mono-s'%3ES%3C/tspan%3E%3Ctspan class='mono-d'%3ED%3C/tspan%3E%3C/text%3E%3Crect x='102' y='74' width='10' height='10' rx='2' class='mono-dot'/%3E%3Crect x='102' y='58' width='10' height='10' rx='2' fill='%23ffffff' opacity='0.3'/%3E%3C/svg%3E">
+
     <style>
         :root {
             --bg-color: #0b0f19;
             --surface-color: #111827;
             --border-color: #1f2937;
-            --primary: #3b82f6;
-            --primary-hover: #2563eb;
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --primary-light: #818cf8;
             --text-main: #f9fafb;
             --text-muted: #9ca3af;
             --accent: #10b981;
@@ -42,15 +47,16 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        .logo {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: var(--text-main);
+        .logo-link {
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            width: 180px;
         }
 
-        .logo span {
-            color: var(--primary);
+        nav {
+            display: flex;
+            align-items: center;
         }
 
         nav a {
@@ -92,15 +98,15 @@
         }
 
         .badge {
-            background: rgba(59, 130, 246, 0.1);
-            color: var(--primary);
+            background: rgba(79, 70, 229, 0.1);
+            color: var(--primary-light);
             padding: 0.35rem 0.85rem;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
             display: inline-block;
             margin-bottom: 1.5rem;
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(79, 70, 229, 0.2);
         }
 
         .hero h1 {
@@ -220,7 +226,21 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">Rog<span>.LeadGen</span></a>
+        <a href="index.html" class="logo-link" aria-label="Servidor Dev Home">
+            <!-- Primary Wordmark SVG -->
+            <svg viewBox="0 0 420 80" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .wordmark-text { font-family: 'Inter', sans-serif; font-size: 52px; letter-spacing: -2px; }
+                    .mark-primary { font-weight: 900; fill: #ffffff; }
+                    .mark-accent { font-weight: 300; fill: #818cf8; letter-spacing: 0px; }
+                    .mark-dot { fill: #818cf8; }
+                </style>
+                <text x="0" y="58" class="wordmark-text">
+                    <tspan class="mark-primary">SERVIDOR</tspan><tspan class="mark-accent">DEV</tspan>
+                </text>
+                <rect x="372" y="44" width="12" height="12" rx="2" class="mark-dot"/>
+            </svg>
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="#services">Services</a>
@@ -230,9 +250,9 @@
     </header>
 
     <section class="hero">
-        <div class="badge">Specialized Virtual Assistant & Funnel Architect</div>
+        <div class="badge">Full-Stack Developer & Outbound Automation Architect</div>
         <h1>Stop Chasing Cold Leads. Build Predictable Outbound Pipelines.</h1>
-        <p>Most Virtual Assistants just handle routine admin tasks. I specialize in B2B lead generation, verified list-building, and high-converting pipeline workflows that turn cold clicks into booked discovery calls.</p>
+        <p>Most developers only write code. I engineer the entire outbound data flow—combining full-stack web architecture, custom APIs, Make.com automations, and zero-bounce lead verification systems that turn cold clicks into booked calls.</p>
         <div class="hero-buttons">
             <a href="contact.html" class="btn">Get a Free Action Plan (Via Email)</a>
             <a href="case-studies.html" class="btn btn-secondary">View Case Studies</a>
@@ -245,8 +265,8 @@
             <p>Verified B2B Leads Built Monthly</p>
         </div>
         <div class="metric-card">
-            <h3>24%</h3>
-            <p>Average Outbound Response Lift</p>
+            <h3>0%</h3>
+            <p>Outbound Email Bounce Rate</p>
         </div>
         <div class="metric-card">
             <h3>3x</h3>
@@ -255,25 +275,25 @@
     </section>
 
     <section class="services" id="services">
-        <h2 class="section-title">Core Lead Generation Skills</h2>
+        <h2 class="section-title">Core Development & Lead Gen Capabilities</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h4>🎯 Targeted List Building</h4>
-                <p>Scraping and verifying high-accuracy decision-maker emails and LinkedIn profiles using Apollo, LinkedIn Sales Navigator, and ZeroBounce.</p>
+                <h4>⚡ Outbound Workflow Engineering</h4>
+                <p>Building automated data pipelines using Make.com and Power Automate to sync Apollo leads directly into HubSpot with strict data validation.</p>
             </div>
             <div class="service-card">
-                <h4>✉️ Outbound Sequence Setup</h4>
-                <p>Writing personalized cold email and LinkedIn message frameworks focused on friction reduction and high response rates.</p>
+                <h4>💻 Custom Web & CMS Architecture</h4>
+                <p>Developing high-performance landing pages, custom React web applications, and modular HubSpot CMS templates that never break styling rules.</p>
             </div>
             <div class="service-card">
-                <h4>⚡ CRM Architecture & Cleanup</h4>
-                <p>Organizing pipelines, managing deal tracking tags, and eliminating duplicate records inside HubSpot, Salesforce, or close.io.</p>
+                <h4>🛡️ Infrastructure & Deliverability</h4>
+                <p>Configuring secure DNS records (SPF, DKIM, DMARC), domain warmup schedules, and API integrations to guarantee high inbox placement.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Rogelio Servidor. Built for high-converting B2B lead generation.</p>
+        <p>&copy; 2026 Servidor Dev. Built for high-converting B2B lead generation and full-stack execution.</p>
     </footer>
 
 </body>
